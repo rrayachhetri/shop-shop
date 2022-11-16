@@ -28,7 +28,7 @@ function ProductList() {
       return state.products;
     }
 
-    return products.filter(
+    return state.products.filter(
       (product) => product.category._id === currentCategory
     );
   }
