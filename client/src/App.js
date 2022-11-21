@@ -44,12 +44,12 @@ function App() {
           <StoreProvider>
            <Nav />
            <Routes>
-             <Route exact path="/" component={Home} />
-             <Route exact path="/login" component={Login} />
-             <Route exact path="/signup" component={Signup} />
-             <Route exact path="/orderHistory" component={OrderHistory} />
-             <Route exact path="/products/:id" component={Detail} />
-             <Route component={NoMatch} />
+             <Route  path="/" element={Home} />
+             <Route  path="/login" element={Login} />
+             <Route  path="/signup" element={Signup} />
+             <Route  path="/orderHistory" element={OrderHistory} />
+             <Route  path="/products/:id" element={Detail} />
+             <Route  path='*' element={NoMatch} />
            </Routes>
           </StoreProvider>
         </div>
